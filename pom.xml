@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <groupId>com.a86c6f7964</groupId>
+    <artifactId>ruist-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>ruist-parent</name>
+    <description>Guice REST library</description>
+
+    <developers>
+        <developer>
+            <name>Cameron Davison</name>
+            <email>cameron.davison@gmail.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>ruist-core</module>
+        <module>ruist-jersey</module>
+    </modules>
+</project>
