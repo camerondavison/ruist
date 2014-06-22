@@ -6,9 +6,16 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ruist-core</artifactId>
+    <artifactId>ruist-jetty</artifactId>
 
     <dependencies>
+        <!-- ruist -->
+        <dependency>
+            <groupId>com.a86c6f7964</groupId>
+            <artifactId>ruist-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!-- guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -26,6 +33,20 @@
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-multibindings</artifactId>
             <version>4.0-beta4</version>
+        </dependency>
+
+        <!-- jetty -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>8.1.15.v20140411</version>
+        </dependency>
+
+        <!-- logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
         </dependency>
     </dependencies>
 

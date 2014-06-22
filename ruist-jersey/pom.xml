@@ -9,22 +9,33 @@
     <artifactId>ruist-jersey</artifactId>
 
     <dependencies>
+        <!-- ruist -->
         <dependency>
             <groupId>com.a86c6f7964</groupId>
-            <artifactId>ruist-core</artifactId>
+            <artifactId>ruist-jetty</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- jersey -->
         <dependency>
-	    <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-server</artifactId>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-servlet</artifactId>
             <version>1.18.1</version>
         </dependency>
 
+        <!-- jetty -->
+        <!-- todo: would be nice to not be tied to jetty -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>8.1.15.v20140411</version>
+        </dependency>
+
+        <!-- guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>16.0.1</version>
+            <version>17.0</version>
         </dependency>
     </dependencies>
 
