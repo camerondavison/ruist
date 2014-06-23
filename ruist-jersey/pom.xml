@@ -9,13 +9,6 @@
     <artifactId>ruist-jersey</artifactId>
 
     <dependencies>
-        <!-- ruist -->
-        <dependency>
-            <groupId>com.a86c6f7964</groupId>
-            <artifactId>ruist-jetty</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
         <!-- jersey -->
         <dependency>
             <groupId>com.sun.jersey</groupId>
@@ -28,11 +21,31 @@
             <version>1.18.1</version>
         </dependency>
 
+        <!-- guice -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0-beta4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+            <version>4.0-beta4</version>
+        </dependency>
+
         <!-- guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>17.0</version>
+        </dependency>
+
+        <!-- servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
