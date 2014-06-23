@@ -44,6 +44,8 @@ public class Ruist {
                     manager.awaitStopped();
                 } catch (Exception e) {
                     throw new RuntimeException("Unable to become healthy in 10 seconds", e);
+                } finally {
+                    manager.stopAsync();
                 }
             }
         };

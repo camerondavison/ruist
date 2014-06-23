@@ -6,31 +6,26 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ruist-example</artifactId>
+    <artifactId>ruist-varexport</artifactId>
 
     <dependencies>
-        <!-- ruist -->
-        <dependency>
-            <groupId>com.a86c6f7964</groupId>
-            <artifactId>ruist-jetty</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.a86c6f7964</groupId>
-            <artifactId>ruist-jersey</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.a86c6f7964</groupId>
-            <artifactId>ruist-varexport</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
         <!-- guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>17.0</version>
+        </dependency>
+
+        <!-- varexport -->
+        <dependency>
+            <groupId>com.indeed</groupId>
+            <artifactId>util-varexport</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
         </dependency>
 
         <!-- guice -->
@@ -39,14 +34,16 @@
             <artifactId>guice</artifactId>
             <version>4.0-beta4</version>
         </dependency>
-
-        <!-- logging -->
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.1.2</version>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+            <version>4.0-beta4</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+            <version>4.0-beta4</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -26,6 +26,7 @@
         <module>ruist-jersey</module>
         <module>ruist-jetty</module>
         <module>ruist-example</module>
+        <module>ruist-varexport</module>
     </modules>
 
     <dependencies>
