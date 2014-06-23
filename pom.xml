@@ -25,8 +25,11 @@
         <module>ruist-core</module>
         <module>ruist-jersey</module>
         <module>ruist-jetty</module>
-        <module>ruist-example</module>
         <module>ruist-varexport</module>
+        <module>ruist-status</module>
+
+        <!-- example -->
+        <module>ruist-example</module>
     </modules>
 
     <dependencies>

@@ -25,6 +25,11 @@
             <artifactId>ruist-varexport</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.a86c6f7964</groupId>
+            <artifactId>ruist-status</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <!-- guava -->
         <dependency>
