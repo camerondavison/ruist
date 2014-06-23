@@ -1,13 +1,11 @@
 package com.a86c6f7964.ruist.jetty;
 
 import com.google.common.util.concurrent.Service;
-import com.google.common.util.concurrent.Service.Listener;
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 import org.eclipse.jetty.server.Server;
 
 import javax.annotation.Nonnull;
-import javax.inject.Singleton;
 import java.net.InetSocketAddress;
 
 /**

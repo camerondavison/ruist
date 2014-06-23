@@ -1,13 +1,17 @@
 package com.a86c6f7964.ruist.jetty;
 
-import com.google.common.util.concurrent.Service.Listener;
+import com.google.inject.servlet.GuiceFilter;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.DefaultServlet;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 
 import javax.annotation.Nonnull;
 import javax.inject.Inject;
 import javax.inject.Provider;
 import javax.inject.Singleton;
+import javax.servlet.DispatcherType;
 import java.net.InetSocketAddress;
+import java.util.EnumSet;
 
 /**
  *
@@ -25,6 +29,10 @@ public class JettyProvider implements Provider<Server> {
 
     @Override
     public Server get() {
-        return new Server(address);
+        final Server s = new Server(address);
+        final ServletContextHandler h = new ServletContextHandler(s, "/", false, false);
+        h.addFilter(GuiceFilter.class, "/*", EnumSet.of(DispatcherType.REQUEST));
+        h.addServlet(DefaultServlet.class, "/");
+        return s;
     }
 }

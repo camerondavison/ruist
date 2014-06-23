@@ -22,13 +22,10 @@
             <artifactId>jersey-servlet</artifactId>
             <version>1.18.1</version>
         </dependency>
-
-        <!-- jetty -->
-        <!-- todo: would be nice to not be tied to jetty -->
         <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlet</artifactId>
-            <version>8.1.15.v20140411</version>
+            <groupId>com.sun.jersey.contribs</groupId>
+            <artifactId>jersey-guice</artifactId>
+            <version>1.18.1</version>
         </dependency>
 
         <!-- guava -->

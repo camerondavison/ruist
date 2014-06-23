@@ -34,11 +34,21 @@
             <artifactId>guice-multibindings</artifactId>
             <version>4.0-beta4</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+            <version>4.0-beta4</version>
+        </dependency>
 
         <!-- jetty -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
+            <version>8.1.15.v20140411</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
             <version>8.1.15.v20140411</version>
         </dependency>
 

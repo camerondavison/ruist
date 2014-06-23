@@ -4,7 +4,6 @@ import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Iterables;
 import com.google.common.util.concurrent.AbstractIdleService;
-import com.google.common.util.concurrent.MoreExecutors;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.slf4j.Logger;
@@ -29,11 +28,6 @@ class JettyIdleService extends AbstractIdleService {
     @Inject
     JettyIdleService(@Nonnull @Jetty final Server server) {
         this.server = server;
-    }
-
-    @com.google.inject.Inject(optional = true)
-    void injectListener(@Jetty Listener listener) {
-        this.addListener(listener, MoreExecutors.sameThreadExecutor());
     }
 
     @Override

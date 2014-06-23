@@ -4,8 +4,6 @@ import com.a86c6f7964.ruist.core.Ruist;
 import com.a86c6f7964.ruist.jersey.JerseyModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.net.InetSocketAddress;
 
