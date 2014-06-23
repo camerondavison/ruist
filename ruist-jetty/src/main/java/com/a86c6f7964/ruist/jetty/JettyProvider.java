@@ -17,7 +17,7 @@ import java.util.EnumSet;
  *
  */
 @Singleton
-public class JettyProvider implements Provider<Server> {
+class JettyProvider implements Provider<Server> {
 
     @Nonnull
     private final InetSocketAddress address;
